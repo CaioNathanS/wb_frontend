@@ -1,8 +1,9 @@
-import Routes from "./navigation/Routes";
+import Navigation from "./navigation/Navigation";
+
 
 function App() {
   return (
-   <Routes/>
+   <Navigation/>
   );
 }
 
