@@ -1,7 +1,8 @@
-import { Header } from "../components/LandingPage";
+import { Content } from "../components/LandingPage";
+
+
 
 export default function LandingPage(){
-    return <div>
-         <Header/>
-    </div>
+    return <Content/>
+   
 }
