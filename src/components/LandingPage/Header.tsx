@@ -1,6 +1,9 @@
 import { AppBar, Button, Link, Toolbar, Typography } from "@mui/material";
+import mainLogo from '../../assets/mainLogo.png'
 
 export function Header (){
+
+
     return <AppBar
     position="static"
     color="default"
@@ -9,8 +12,9 @@ export function Header (){
   >
 
    <Toolbar sx={{ flexWrap: 'wrap' }}>
+    
       <Typography variant="h6" color="text" noWrap sx={{ flexGrow: 1 }}>
-        WB Advocacia
+      <img alt="mainLogo" src={mainLogo} style={{maxWidth:'80px'}} />
       </Typography>
       <nav>
         <Link
@@ -19,7 +23,7 @@ export function Header (){
           href="#"
           sx={{ my: 1, mx: 1.5 }}
         >
-          Espaço
+          Localização
         </Link>
         <Link
           variant="button"
@@ -38,9 +42,10 @@ export function Header (){
           Novidades
         </Link>
       </nav>
-      <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
+       {/* <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
         Login
       </Button>
+     */}
     </Toolbar>
 
     </AppBar>
