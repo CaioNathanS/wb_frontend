@@ -1,4 +1,11 @@
-import { Button, Card, CardActions, CardContent,  Container, Grid, Typography } from "@mui/material";
+import { Box, Button, Card,  CardContent,  Container, Grid, Typography } from "@mui/material";
+import {LocalPhone} from '@mui/icons-material';
+import SmartphoneIcon from '@mui/icons-material/Smartphone';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import ScheduleIcon from '@mui/icons-material/Schedule';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
+
 
 
 
@@ -11,64 +18,104 @@ export function Features(){
 
         <Grid item  xs={12} sm={6} md={4}>
           <Card
-            sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+            sx={{ height: '100%', display: 'flex', flexDirection: 'column',  boxShadow:" 3px 3px 6px 7px #ccc" }}
           >
            
-            <CardContent sx={{ flexGrow: 1 }}>
+            <CardContent sx={{ flexGrow: 1  }}>
               <Typography gutterBottom variant="h5" component="h2">
                 Contato
               </Typography>
-              <Typography>
-                This is a media card. You can use this section to describe the
-                content.
+
+              <Box sx={{display:"flex" , alignItems:"center"}}>
+              <Typography sx={{width:'90%'}}>
+              wbraz.adv@gmail.com 
               </Typography>
+              <Button size="small">
+              <MailOutlineIcon />
+              </Button>
+                </Box>
+             
+                <Box sx={{display:"flex" , alignItems:"center"}}>
+                <Typography sx={{width:'90%'}}>
+              (61) 3543-9342
+              </Typography>
+              <Button   size="small">
+              <LocalPhone />
+              </Button>
+              </Box>
+
+              <Box sx={{display:"flex", alignItems:"center"}}>
+              <Typography sx={{width:'90%'}}>
+              (61) 99410-0485 
+              </Typography>
+              <Button  size="small">
+              <SmartphoneIcon />
+             
+                </Button>
+              </Box>
             </CardContent>
-            <CardActions>
-              <Button size="small">View</Button>
-              <Button size="small">Edit</Button>
-            </CardActions>
+           
           </Card>
         </Grid>
 
         <Grid item  xs={12} sm={6} md={4}>
           <Card
-            sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-          >
-           
+            sx={{ height: '100%', display: 'flex', flexDirection: 'column', boxShadow:" 3px 3px 6px 7px #ccc" }}
+          > 
             <CardContent sx={{ flexGrow: 1 }}>
               <Typography gutterBottom variant="h5" component="h2">
                 Horário de funcionamento
               </Typography>
-              <Typography>
-                This is a media card. You can use this section to describe the
-                content.
+              <Box sx={{display:"flex" , alignItems:"center"}}>
+              <Typography sx={{width:'90%'}}>
+              Segunda a sexta
               </Typography>
+              <Button size="small">
+              <CalendarMonthIcon />
+              </Button>
+                </Box>
+
+                <Box sx={{display:"flex" , alignItems:"center"}}>
+              <Typography sx={{width:'90%'}}>
+              8h - 18h
+              </Typography>
+              <Button size="small">
+              <ScheduleIcon />
+              </Button>
+              </Box>
+
+               <Box sx={{display:"flex" , alignItems:"center"}}>
+              <Typography sx={{width:'90%'}}>
+              12h - 14h
+              </Typography>
+              <Button size="small">
+              <RestaurantIcon />
+              </Button>
+              </Box>
             </CardContent>
-            <CardActions>
-              <Button size="small">View</Button>
-              <Button size="small">Edit</Button>
-            </CardActions>
           </Card>
         </Grid>
 
         <Grid item  xs={12} sm={6} md={4}>
           <Card
-            sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+            sx={{ height: '100%', display: 'flex', flexDirection: 'column', boxShadow:" 3px 3px 6px 7px #ccc" }}
           >
            
             <CardContent sx={{ flexGrow: 1 }}>
               <Typography gutterBottom variant="h5" component="h2">
-                Espaço
+                 Localização
               </Typography>
-              <Typography>
-                This is a media card. You can use this section to describe the
-                content.
+              <Typography py={1}>
+              Grande Colorado,  Edifício Pontal 
               </Typography>
+              <Typography pb={1}>
+              Condominio Solar de Athenas,  Lotes 01/02
+              </Typography>
+              <Typography pb={1}>
+              73015-903 
+                </Typography>
             </CardContent>
-            <CardActions>
-              <Button size="small">View</Button>
-              <Button size="small">Edit</Button>
-            </CardActions>
+           
           </Card>
         </Grid>
 
@@ -78,9 +125,7 @@ export function Features(){
           >
            
             <CardContent sx={{ flexGrow: 1 }}>
-              <Typography gutterBottom variant="h5" component="h2">
-                Localização
-              </Typography>
+              
               <iframe 
                title="local"
                width="100%"
