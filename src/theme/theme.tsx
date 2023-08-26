@@ -1,16 +1,14 @@
 import { createTheme } from "@mui/material";
 
-
-
 const defaultTheme = createTheme({
   palette: {
     primary: {
-      main:'#D4AF37',
+      main: "#D4AF37",
     },
     secondary: {
-      main:'#ccc',
+      main: "#ccc",
     },
   },
 });
 
-export {defaultTheme};
+export { defaultTheme };
