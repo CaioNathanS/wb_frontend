@@ -1,52 +1,29 @@
-import { AppBar, Button, Link, Toolbar, Typography } from "@mui/material";
-import mainLogo from '../../assets/mainLogo.png'
+import {  Box, Typography } from "@mui/material";
+import {  Button, Stack } from "@mui/material";
+import pretoLogo from '../../assets/pretoLogo.png'
 
-export function Header (){
 
+export function Header(){
+    return <Box pb={4} > <Typography
+     
+      component="h1"
+      variant="h2"
+      align="center"
+      color="text.primary"
+      gutterBottom
+    >
+      <img alt="img" src={pretoLogo} style={{maxWidth:'350px',marginBottom:'-110px' , marginTop:'-40px'}} />
+    </Typography>
+    <Stack
+              sx={{ pt: 4 }}
+              direction="row"
+              spacing={2}
+              justifyContent="center"
+            >
+              <Button variant="contained">Conhcer espaço</Button>
+             
+            </Stack>
+    </Box>
 
-    return <AppBar
-    position="static"
-    color="default"
-    elevation={0}
-    sx={{ borderBottom: `1px solid  #333` }}
-  >
-
-   <Toolbar sx={{ flexWrap: 'wrap' }}>
-    
-      <Typography variant="h6" color="text" noWrap sx={{ flexGrow: 1 }}>
-      <img alt="mainLogo" src={mainLogo} style={{maxWidth:'80px'}} />
-      </Typography>
-      <nav>
-        <Link
-          variant="button"
-          color="text.primary"
-          href="#"
-          sx={{ my: 1, mx: 1.5 }}
-        >
-          Localização
-        </Link>
-        <Link
-          variant="button"
-          color="text.primary"
-          href="#"
-          sx={{ my: 1, mx: 1.5 }}
-        >
-          Contato
-        </Link>
-        <Link
-          variant="button"
-          color="text.primary"
-          href="#"
-          sx={{ my: 1, mx: 1.5 }}
-        >
-          Novidades
-        </Link>
-      </nav>
-       {/* <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
-        Login
-      </Button>
-     */}
-    </Toolbar>
-
-    </AppBar>
+   
 }
